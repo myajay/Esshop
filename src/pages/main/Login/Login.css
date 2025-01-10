@@ -1,0 +1,39 @@
+.login-container {
+    width: 300px;
+    margin: 50px auto ;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+  }
+  
+  .loginHeader {
+    text-align: center;
+  }
+  
+  form div {
+    margin-bottom: 15px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  .Loginbtn {
+    width: 100%;
+    padding: 10px;
+    background-color: lightslategray;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .Loginbtn:hover {
+    background-color: rgb(79, 125, 170);
+  }
+  

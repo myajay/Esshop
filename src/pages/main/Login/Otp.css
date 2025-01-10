@@ -1,0 +1,64 @@
+/* General Styles */
+.otp-container, .add-to-cart-container {
+    width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+  }
+  
+  h2 {
+    text-align: center;
+  }
+  
+  form div {
+    margin-bottom: 15px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  .otpbutton {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .otpbutton:hover {
+    background-color: #45a049;
+  }
+
+  /* ScrollingText.css */
+
+/* Container to hold the scrolling text */
+
+  
+  .scrolling-text {
+    display: inline-block;
+    white-space: nowrap; /* Prevents text from wrapping to the next line */
+    color: #000; /* Text color */
+    font-size: 18px; /* Font size of the text */
+    font-weight: bold; /* Bold text */
+    animation: scrollText 10s linear infinite; /* Apply the animation */
+  }
+  
+  /* Keyframes for scrolling animation */
+  @keyframes scrollText {
+    0% {
+      transform: translateX(100%); /* Start position (off-screen to the right) */
+    }
+    100% {
+      transform: translateX(-100%); /* End position (off-screen to the left) */
+    }
+  }
+  

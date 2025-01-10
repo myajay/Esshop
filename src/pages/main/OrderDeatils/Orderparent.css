@@ -1,0 +1,435 @@
+/* Center the entire container in the middle of the screen */
+.containerParent {
+  display: flex;
+  justify-content: center;  /* Horizontally center the content */
+  align-items: center;      /* Vertically center the content */
+             /* Make container take full height of the viewport */
+  padding: 20px;
+  text-align: center;
+  margin-top: 5rem;
+}
+
+/* Basic styling for the card */
+.cardParent {
+           /* Adjust the width of the card */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background-color: white;
+  padding: 20px;            /* Add padding for better spacing inside the card */
+  text-align: center;
+  display: flex;
+  flex-direction: column;   /* Stack content vertically */
+  justify-content: center;  /* Vertically center content inside the card */
+  align-items: center;      /* Horizontally center content inside the card */
+}
+
+.product-image {
+  width: 100%;              /* Make image take up full width of the card */
+  height: 200px;            /* Fixed height for the image */
+  object-fit: cover;        /* Ensure the image maintains its aspect ratio */
+  border-bottom: 1px solid #eee;
+}
+
+.product-info {
+  padding: 10px;
+}
+
+.product-info h3 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.product-price {
+  font-size: 16px;
+  color: green;
+  margin-bottom: 10px;
+}
+
+.quantity-selector {
+  margin-bottom: 20px;      /* Add some space below the quantity dropdown */
+}
+
+.quantity-dropdown {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.quantity-dropdown:focus {
+  outline: none;
+  border-color: #6c757d;
+}
+
+p {
+  font-size: 14px;
+  color: #333;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Small Devices (Mobile Portrait) */
+@media (max-width: 600px) {
+  .containerParent {
+    height: 60vh;
+    width: 90vw;
+    margin-top: 3rem;
+  }
+
+  .cardParent {
+    height: auto;  /* Allow the card to adjust height based on content */
+    width: 95vw;   /* Card takes up more width on smaller screens */
+    padding: 10px;
+  }
+
+  .product-image {
+    height: 150px;  /* Reduce the image height for smaller screens */
+  }
+
+  .product-info h3 {
+    font-size: 18px;
+  }
+
+  .product-price {
+    font-size: 14px;
+  }
+
+  .quantity-dropdown {
+    font-size: 12px;
+  }
+
+  p {
+    font-size: 12px;
+  }
+}
+
+/* Medium Devices (Tablet Portrait) */
+@media (max-width: 768px) {
+  .containerParent {
+    height: 50vh;
+    width: 100vw;
+  }
+
+  .cardParent {
+    height: 50vh;
+    width: 80vw;
+    padding: 15px;
+  }
+
+  .product-image {
+    height: 180px;
+  }
+
+  .product-info h3 {
+    font-size: 19px;
+  }
+
+  .product-price {
+    font-size: 15px;
+  }
+
+  .quantity-dropdown {
+    font-size: 13px;
+  }
+
+  p {
+    font-size: 13px;
+  }
+}
+
+/* Large Devices (Laptop and Desktop) */
+@media (min-width: 1024px) {
+  .containerParent {
+    height: 40vh;
+    width: 100vw;
+  }
+
+  .cardParent {
+    height: 58vh;
+    width: 22vw;
+  }
+
+  .product-image {
+    height: 150px;
+  }
+
+  .product-info h3 {
+    font-size: 20px;
+  }
+
+  .product-price {
+    font-size: 16px;
+  }
+
+  .quantity-dropdown {
+    font-size: 14px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+}
+
+
+/* General Styles */
+.payment-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.step-title {
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.step-title:nth-child(2) {
+  font-size: 20px;
+}
+
+.submit-btn {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.submit-btn button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.submit-btn button:hover {
+  background-color: #45a049;
+}
+
+/* Form Styles */
+.address-form {
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.input-field:focus {
+  border-color: #4CAF50;
+  outline: none;
+}
+
+/* Payment Method Section */
+.payment-method {
+  display: flex;
+  flex-direction: column;  /* Stack the payment options vertically */
+  align-items: flex-start;  /* Align options to the left */
+  margin-top: 20px;
+}
+
+.payment-option {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.payment-radio {
+  margin-right: 10px;  /* Add space between radio button and label */
+}
+
+.payment-label {
+  font-size: 16px;
+  color: #333;
+}
+
+.step-title {
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Ensure proper spacing and responsiveness */
+@media screen and (max-width: 768px) {
+  .payment-container {
+    padding: 15px;
+    margin: 10px;
+  }
+
+  .step-title {
+    font-size: 20px;
+  }
+
+  .input-field {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .submit-btn button {
+    font-size: 14px;
+  }
+  
+  .payment-method {
+    margin-top: 15px;
+  }
+
+  .payment-label {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .payment-container {
+    padding: 10px;
+    margin: 5px;
+  }
+
+  .step-title {
+    font-size: 18px;
+  }
+
+  .form-group {
+    margin-bottom: 12px;
+  }
+
+  .input-field {
+    padding: 7px;
+    font-size: 12px;
+  }
+
+  .submit-btn button {
+    font-size: 12px;
+  }
+  
+  .payment-method {
+    margin-top: 10px;
+  }
+
+  .payment-label {
+    font-size: 14px;
+  }
+}
+
+
+/* Order Summary Container */
+.order-summary-container {
+  background-color: #f8f8f8; /* Light grey background */
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 600px;
+  margin: 20px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Title Styling */
+.summary-title {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Summary Details */
+.summary-details {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.summary-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  font-size: 16px;
+  border-bottom: 1px solid #ddd;
+}
+
+.summary-item strong {
+  color: #555;
+}
+
+.summary-item p {
+  color: #333;
+}
+
+/* Delivery Address */
+.address-container {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.address-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.address-details p {
+  margin: 5px 0;
+  color: #555;
+}
+
+/* Payment Method */
+.payment-method-container {
+  margin-top: 20px;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.payment-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.payment-method-container p {
+  color: #555;
+  font-size: 16px;
+}
+
+/* Adding a subtle hover effect */
+.summary-item:hover {
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+

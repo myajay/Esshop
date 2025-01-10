@@ -1,0 +1,73 @@
+/* Admin Page Styles */
+.admin-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f4f4f4;
+    height: 100vh;
+    justify-content: center;
+  }
+  
+  .admin-container h1 {
+    font-size: 2.5rem;
+    color: #333;
+  }
+  
+  .admin-container h2 {
+    font-size: 1.8rem;
+    color: #555;
+  }
+  
+  .admin-icon {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+  }
+  
+  .admin-icon h2 {
+    margin-left: 10px;
+  }
+  
+  .order-table {
+    margin-top: 20px;
+    width: 80%;
+    overflow-x: auto;
+  }
+  
+  .order-table table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .order-table th, .order-table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  
+  .order-table th {
+    background-color: #f0f0f0;
+    color: #333;
+  }
+  
+  .order-table td {
+    background-color: #fff;
+  }
+  
+  .order-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .order-table td:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .order-table input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+  

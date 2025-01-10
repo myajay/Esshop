@@ -1,0 +1,149 @@
+.App {
+    font-family: Arial, sans-serif;
+  }
+  
+  .cards-container {
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+    grid-template-columns: repeat(2, 1fr); /* Default to 2 cards per row */
+  }
+  
+  /* Card styles */
+  .card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .card-image {
+    width: 100%;
+    height: 25vh;
+  }
+  
+  .card-content {
+    padding: 10px;
+  }
+  
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .add-to-cart:hover {
+    color: #fff;
+    background-color: #7aaccf;
+
+}
+
+.add-to-cart1:hover {
+  color: #fff;
+  background-color: #7aaccf;
+
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.add-to-cart1 {
+  color: #487594;
+  background-color: #bed8eb;
+
+ 
+  text-decoration: none;
+}
+
+.card-footer1 {
+    padding-top: 10px; /* Increase space above button */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* flex-direction: column;  */
+}
+
+.card-description {
+    font-size: 0.875rem;
+    color: #777;
+    margin-bottom: 10px; /* Add margin for spacing between description and button */
+}
+  
+  .card-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+  
+  .card-price {
+    font-size: 1rem;
+    color: #333;
+    margin-left: 10px;
+  }
+  
+
+  
+  .add-to-cart {
+    padding: 8px 16px; /* Adjust the padding for a smaller height */
+    background-color: #bed8eb;
+    border: 1px solid rgb(11, 12, 11);
+    color: #487594;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: 'cambria';
+    font-weight: 600;
+    font-size: 0.7rem; /* Slightly reduce font size for consistency */
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 25px; /* Set a specific height for the button */
+    width: 38%; /* Keep it 100% width of the container */
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); 
+}
+
+  
+  .heart-icon-wrapper {
+  /* padding: 3px; */
+    display: flex;
+    justify-content: flex-end;
+    /* align-items: flex-start; */
+  }
+  
+  /* Media Query for Tablets and Laptops */
+  @media (min-width: 768px) {
+    .cards-container {
+      grid-template-columns: repeat(4, 1fr); /* Show 4 cards per row on larger screens */
+    }
+
+  }
+  
+  @media (max-width: 767px) {
+    .cards-container {
+      grid-template-columns: repeat(2, 1fr); /* Show 2 cards per row on smaller screens */
+    }
+    .add-to-cart{
+      width: 60%;
+    }
+    .card-image {
+      width: 100%;
+      height: 10vh;
+    }
+    .card-title {
+      font-size: 0.8rem;
+      font-weight: bold;
+    }
+    .card-price {
+      font-size: 0.8rem;
+      color: #333;
+      margin-left: 5px;
+    }
+  }
+
+
+  .bgColorHome{
+    background: #cadeed;
+  }
+
+  
+
+  

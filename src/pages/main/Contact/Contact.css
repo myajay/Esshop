@@ -1,0 +1,45 @@
+/* Contact Page Styles */
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .contact-container h1 {
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .contact-container p {
+    font-size: 1.2rem;
+    color: #666;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .contact-info {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .contact-info .email-address {
+    margin-left: 10px;
+    color: #007BFF;  /* Blue color for the email link */
+    text-decoration: none;
+  }
+  
+  .contact-info .email-address:hover {
+    text-decoration: underline;  /* Underline email on hover */
+  }
+  
+  .note {
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #555;
+    text-align: center;
+  }
+  
